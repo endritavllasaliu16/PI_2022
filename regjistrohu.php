@@ -10,3 +10,7 @@
   <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+<body style="background: #eee;">
+ <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
+    <div class="container">
+      <br><br>
