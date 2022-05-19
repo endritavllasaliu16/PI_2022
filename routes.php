@@ -8,4 +8,5 @@ $router->get('PI_2022/index.php/detyratemia', 'controllers/detyratemia.controlle
 $router->get('PI_2022/index.php/lendet', 'controllers/lendet.controller.php');
 $router->get('PI_2022/index.php/dorezodetyren', 'controllers/dorezodetyren.controller.php');
 $router->get('PI_2022/index.php/vleresimet', 'controllers/vleresimet.controller.php');
+$router->get('PI_2022/index.php/dorezimet', 'controllers/dorezimet.controller.php');
 $router->post('PI_2022/index.php/names', 'controllers/add-name.php');
