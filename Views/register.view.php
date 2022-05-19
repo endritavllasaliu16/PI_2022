@@ -4,7 +4,7 @@
     <div class="container">
       <br><br>
       <div class="card"style="position: relative;padding: 20px 20px 20px 20px;">
-      <center><img src="images/logo.png" width="150px" height="150px"></center>
+      <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/University_of_Prishtina_logo.svg/2053px-University_of_Prishtina_logo.svg.png" width="150px" height="150px"></center>
       <div class="row">
     <center><form class="col s12">
       <div class="row">
@@ -38,10 +38,4 @@
 </center>
 <br>
 <br>
-  <!--  Pjesa e scriptave te Material Design-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
-</html>
+<?php require ('partials/footer.php'); ?>
