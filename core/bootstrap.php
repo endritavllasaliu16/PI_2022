@@ -12,3 +12,17 @@ require 'core/database/QueryBuilder.php';
 $app['database'] = new QueryBuilder(
     Connection::make($app['config']['database'])
 );
+
+function check_login(){
+    if(isset($_SESSION['user_id'])){
+        $id = $_SESSION['user_id'];
+
+        $user = $app['database']->selectUserById($id); 
+
+        if($user){
+        return $user;
+        }
+    }
+    
+    header("Location: /PI_2022/index.php");
+}

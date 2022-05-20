@@ -27,12 +27,18 @@ class QueryBuilder
             ':' . implode(', :', array_keys($parameters))
         );
 
+        
         try {
             $statement = $this->pdo->prepare($sql);
-
+            
             $statement->execute($parameters);
         } catch (Exception $e) {
-            //
+            
+           echo $e->getMessage();
         }
+    }
+
+    public function selectUserById($id){
+        $statement = $this->pdo->prepare("select * from perdoruesi where user_id=${$id} limit 1");
     }
 }
