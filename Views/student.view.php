@@ -24,7 +24,7 @@
                     <br>
                     <span>20 Detyra</span>
                     <br>
-                    <span style="font-size: 25px;">Shiko <a href="detyrat">detyrat</a></span>
+                    <span style="font-size: 25px;">Shiko <a href="detyratemia">detyrat</a></span>
                 </div>
                 <div class="card" style="width: 200px;height: 200px;margin: 0 20px 0 0;">
                     <br>
