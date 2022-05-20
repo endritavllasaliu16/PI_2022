@@ -17,4 +17,4 @@
       </li>
 </ul>
   
-</body></html>
+ <?php require('partials/footer.php'); ?>
