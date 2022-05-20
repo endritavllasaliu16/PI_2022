@@ -1,19 +1,15 @@
 <?php require('partials/head.php'); ?>
 
 <?php require('partials/navProfesori.php'); ?>
-		
+
 <body>
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
 <div class="col-md-8" style="position: relative;padding: 20px 20px 20px 20px;">
 
    <fieldset>
 		<legend>Shto Detyren</legend>
-			<form action="" method="POST" name="AddAssessment">
+			<form action="" method="GET" name="AddAssessment">
 				<table class="table table-hover" style="margin: left 100px;">
-				<tr>
-					<td><strong> Titulli i detyres  </strong> </td>
-					<td> <input type="text" name="EmriDetyres"> </td>
-				</tr>
 				<tr>
 					<td> <strong> Titulli i detyres  </strong> </td>
 					<td> <input type="text" name="EmriDetyres"> </td>
@@ -42,5 +38,8 @@
 </div>
 </center>
 </body>
+
+
+
  
 <?php require('partials/footer.php'); ?>

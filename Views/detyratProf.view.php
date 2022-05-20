@@ -7,8 +7,8 @@
 	<div class="row">
 		<div class="col-md-12 text-center">
 
-			<a href="addDetyrat.view.php"><button  href="" type="submit" class="btn btn-primary" style="border-radius:10%">Shto Detyre</button></a>
-			<a href="controllDetyrat.php"><button  href="" type="submit" class="btn btn-primary" style="border-radius:10%">Kontrollo Detyrat</button></a>
+			<a href="addDetyra.view.php"><button  href="" type="submit" class="btn btn-primary" style="border-radius:10%">Shto Detyre</button></a>
+			<a href="controllDetyra.view.php"><button  href="" type="submit" class="btn btn-primary" style="border-radius:10%">Kontrollo Detyrat</button></a>
 		</div>
 	</div>
 </div>

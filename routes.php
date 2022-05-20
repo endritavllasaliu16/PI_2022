@@ -11,7 +11,8 @@ $router->get('PI_2022/index.php/vleresimet', 'controllers/vleresimet.controller.
 $router->get('PI_2022/index.php/dorezimet', 'controllers/dorezimet.controller.php');
 //$router->post('PI_2022/index.php/names', 'controllers/add-name.php');
 $router->get('PI_2022/index.php/detyratProf', 'controllers/detyratProf.controller.php');
-$router->get('PI_2022/index.php/addDetyrat.view.php', 'controllers/addDetyra.controller.php');
+$router->get('PI_2022/index.php/addDetyra.view.php', 'controllers/addDetyra.controller.php');
+$router->get('PI_2022/index.php/controllDetyra.view.php', 'controllers/controllDetyra.controller.php');
 
 $router->post('PI_2022/index.php/register', 'controllers/register.controller.php');
 ?>
