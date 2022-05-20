@@ -14,6 +14,7 @@
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="student" tabindex="0">Home</a></li>
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="lendet" tabindex="0">Lendet</a></li>
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="detyratemia" tabindex="0">Detyrat e mia</a></li>
+ <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="detyratProf" tabindex="0">Detyrat</a></li>
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="vleresimet" tabindex="0">Vleresimet</a></li>
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="dorezodetyren" tabindex="0">Dorezo detyren</a></li> 
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="dorezodetyren" tabindex="0">FAQ</a></li>        

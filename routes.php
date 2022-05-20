@@ -9,3 +9,7 @@ $router->get('PI_2022/index.php/lendet', 'controllers/lendet.controller.php');
 $router->get('PI_2022/index.php/dorezodetyren', 'controllers/dorezodetyren.controller.php');
 $router->get('PI_2022/index.php/vleresimet', 'controllers/vleresimet.controller.php');
 $router->post('PI_2022/index.php/names', 'controllers/add-name.php');
+$router->get('PI_2022/index.php/detyratProf', 'controllers/detyratProf.controller.php');
+$router->get('PI_2022/index.php/addDetyrat.view.php', 'controllers/addDetyra.controller.php');
+
+?>
