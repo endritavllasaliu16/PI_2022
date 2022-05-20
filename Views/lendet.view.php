@@ -2,6 +2,7 @@
 
  <?php require('partials/nav.php'); ?>
 
+ <body style="background: #eee;">
  <body>
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
     <div class="container">
