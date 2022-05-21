@@ -53,4 +53,16 @@ class QueryBuilder
 
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
+
+    public function updateUserProfile($user_id, $username,$password){
+        $sql = "update perdoruesi set username='$username',password='$password'  where user_id ='$user_id'";
+        try {
+            $statement = $this->pdo->prepare($sql);
+            
+            $statement->execute($parameters);
+        } catch (Exception $e) {
+            
+           echo $e->getMessage();
+        }
+    }
 }
