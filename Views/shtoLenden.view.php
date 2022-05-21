@@ -16,6 +16,9 @@ while($row = $result->fetch_assoc()) {
   $ID_lenda = $row['ID_lenda'] + 1;
 }
 }
+else{
+  $ID_lenda = 1;
+}
   ?>
 
  <body>
