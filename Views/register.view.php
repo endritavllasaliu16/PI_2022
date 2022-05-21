@@ -9,9 +9,10 @@
     <center><form class="col s12" method="post">
       <div class="row">
         <div class="input-field col s12">
-          <input type="text" id="first_name" name="first_name" type="text" class="validate">
+          <input type="text" id="first_name" name="first_name" class="validate">
           <label for="first_name">Emri</label>
         </div>
+      </div>
         <div class="row">
         <div class="input-field col s12">
           <input id="last_name" name="last_name" type="text" class="validate">
@@ -19,21 +20,18 @@
         </div>
       </div>
       <div class="row">
-<<<<<<< HEAD
-=======
         <div class="input-field col s12">
-          <input id="email" name="email" type="email" class="validate">
+          <input type="email" id="email" name="email" class="validate">
           <label for="email">Email</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" name="email" type="email" class="validate">
-          <label for="email">Konfirmo Email</label>
+          <input type="email" id="konfirmo_email" name="konfirmo_email" class="validate">
+          <label for="konfirmo_email">Konfirmo Email</label>
         </div>
       </div>
       <div class="row">
->>>>>>> d58be3626e8c34f3dd7eb4ef8e8b7bb620c045b8
         <div class="input-field col s12">
           <input id="username" name="username" type="text" class="validate">
           <label for="email">Username</label>
@@ -45,7 +43,6 @@
           <label for="password">Password</label>
         </div>
       </div>
-<<<<<<< HEAD
      <div class="row">
        <label for="radio" style="font-size:18px">Roli</label>
         <p>
@@ -60,42 +57,15 @@
         </p>
       </div>
       <div class="row" id="id_input" style="visibility:visible">
-=======
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" name="password" type="password" class="validate">
-          <label for="password">Konfirmo Password</label>
-        </div>
-      </div>
-      <div class="row">
-        <span>Roli: </span>
-        <br>
-        <br>
-      <label>
-        <input name="group1" class="red" type="radio"  />
-        <span>Student</span>
-        <input name="group1" class="red" type="radio" checked />
-        <span>Profesor</span>
-      </label>
-    </div>
-      <div class="row">
->>>>>>> d58be3626e8c34f3dd7eb4ef8e8b7bb620c045b8
         <div class="input-field col s12">
           <input id="id" name="id" type="number" class="validate">
           <label for="id">ID</label>
         </div>
       </div>
-<<<<<<< HEAD
       <div class="row" id="index_input" style="visibility:hidden">
         <div class="input-field col s12">
           <input id="index" name="index" type="number" class="validate" >
           <label for="index">Indeksi</label>
-=======
-          <div class="row">
-        <div class="input-field col s12">
-          <input id="index" name="index" type="number" class="validate">
-          <label for="index">Index</label>
->>>>>>> d58be3626e8c34f3dd7eb4ef8e8b7bb620c045b8
         </div>
       </div>
       <button class="btn-floating btn-large waves-effect waves-light red" type="submit"><i class="material-icons" >add</i></button>
