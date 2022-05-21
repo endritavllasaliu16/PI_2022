@@ -2,5 +2,8 @@
 
 //$users = $app['database']->selectAll('users');
 
-var_dump($_SERVER['REQUEST_METHOD']);
+session_start();
+
+$_SESSION;
+
 require 'Views/index.view.php';
