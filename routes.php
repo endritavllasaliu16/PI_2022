@@ -13,6 +13,7 @@ $router->get('PI_2022/index.php/dorezimet', 'controllers/dorezimet.controller.ph
 $router->get('PI_2022/index.php/detyratProf', 'controllers/detyratProf.controller.php');
 $router->get('PI_2022/index.php/addDetyra.view.php', 'controllers/addDetyra.controller.php');
 $router->get('PI_2022/index.php/controllDetyra.view.php', 'controllers/controllDetyra.controller.php');
+$router->get('PI_2022/index.php/controllDetyra2.view.php', 'controllers/controllDetyra2.controller.php');
 
 $router->post('PI_2022/index.php/register', 'controllers/register.controller.php');
 ?>
