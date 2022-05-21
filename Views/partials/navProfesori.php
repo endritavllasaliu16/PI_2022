@@ -15,7 +15,7 @@
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="lendet" tabindex="0">Lendet</a></li>
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="dorezimet" tabindex="0">Dorezimet</a></li>
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="detyratProf" tabindex="0">Detyrat</a></li>
- <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="vleresimet" tabindex="0">Vleresimet</a></li>
+ <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="vleresimetProfesor" tabindex="0">Vleresimet</a></li>
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="dorezodetyren" tabindex="0">FAQ</a></li>  
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" style="color:#333" href="logout" tabindex="0">Logout</a></li>      
 </ul>

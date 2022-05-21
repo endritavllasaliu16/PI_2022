@@ -7,4 +7,6 @@ if($user_data[0]->roli=="student"){
     header("Location: /PI_2022/index.php");
 }
 
+
+
 require 'views/controllDetyra.view.php';
