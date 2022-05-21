@@ -19,7 +19,16 @@
         </div>
       </div>
       <div class="row">
-        <input type="checkbox">Student
+        <div class="input-field col s12">
+          <input id="email" name="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" name="email" type="email" class="validate">
+          <label for="email">Konfirmo Email</label>
+        </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
@@ -31,6 +40,35 @@
         <div class="input-field col s12">
           <input id="password" name="password" type="password" class="validate">
           <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" name="password" type="password" class="validate">
+          <label for="password">Konfirmo Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <span>Roli: </span>
+        <br>
+        <br>
+      <label>
+        <input name="group1" class="red" type="radio"  />
+        <span>Student</span>
+        <input name="group1" class="red" type="radio" checked />
+        <span>Profesor</span>
+      </label>
+    </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="id" name="id" type="number" class="validate">
+          <label for="id">ID</label>
+        </div>
+      </div>
+          <div class="row">
+        <div class="input-field col s12">
+          <input id="index" name="index" type="number" class="validate">
+          <label for="index">Index</label>
         </div>
       </div>
       <button class="btn-floating btn-large waves-effect waves-light red" type="submit"><i class="material-icons" >add</i></button>
