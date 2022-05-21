@@ -40,7 +40,7 @@
       <div class="row">
         <div class="input-field col s12">
           <input id="password" name="password" type="password" class="validate" required>
-          <label for="password">FjaleKalimi</label>
+          <label for="password">Fjalekalimi</label>
         </div>
       </div>
       <div class="row">

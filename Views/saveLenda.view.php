@@ -4,51 +4,36 @@
 
 <body>
     <center>
-<?php
- 
- $conn = mysqli_connect("localhost", "root", "root", "projekti");
-  
- // Check connection
- if($conn === false){
-     die("ERROR: Could not connect. "
-         . mysqli_connect_error());
- }
-  
- $ID_lenda =  $_REQUEST['ID_lenda'];
- $emri = $_REQUEST['emri'];
- $kredi =  $_REQUEST['kredi'];
- $semestri = $_REQUEST['semestri'];
-  
- $sql = "INSERT INTO lendet  VALUES ('$ID_lenda',
-     '$emri','$kredi','$semestri')";
-  
- if(mysqli_query($conn, $sql)){
-     echo "<h4>Lenda u ruajt me sukses!</h4>";
-
-     echo nl2br("\n ID e lendes: $ID_lenda\n Emri i lendes: $emri\n Kredite e lendes: "
-         . "$kredi\n Semestri:  $semestri");
- } else{
-     echo "ERROR: Hush! Sorry $sql. "
-         . mysqli_error($conn);
- }
-
-  
- mysqli_close($conn);
- ?>
+        <h4 style="color: green;">Lenda u ruajt me sukses!</h4>
+        <table style="width: 30%;">
+            <tr>
+                <td>ID e Lendes</td>
+                <td><?php echo $_POST['ID_lenda']?></td>
+           </tr>
+           <tr>
+               <td>Emri</td>
+               <td><?php echo $_POST['emri']?></td>
+           </tr>
+           <tr>
+               <td>Kredite</td>
+               <td><?php echo $_POST['kredi']?></td>
+           </tr>
+           <tr>
+               <td>Semestri</td>
+               <td><?php echo $_POST['semestri']?></td>
+           </tr>
+        </table>
 
 <div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
  <div class="container"  style="position: relative;padding: 20px 20px 20px 20px;">
 	<div class="row">
 		<div class="col-md-12 text-center">
-          <a href="lendet.view.php"><button  href="" type="submit" class="btn btn-primary" style="border-radius:10%">Kthehu tek lendet</button></a>
+          <a href="lendet"><button  href="" type="submit" class="btn btn-primary" style="border-radius:10%">Kthehu tek lendet</button></a>
 		</div>
 	</div>
 </div>
 
-
  </center>
  <body>
-
-
 
 <?php require('partials/footer.php'); ?>
