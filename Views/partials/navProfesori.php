@@ -1,8 +1,8 @@
 <nav style="margin: 0 0 0 300px;">
     <div class="nav-wrapper red">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/University_of_Prishtina_logo.svg/1200px-University_of_Prishtina_logo.svg.png" class="brand-logo" width="50px" height="50px" style="top: 7px;"><a href="#" class="brand-logo" style="left: 55px;font-size: 20px;">Miresevini ne Student Dashboard</a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/University_of_Prishtina_logo.svg/1200px-University_of_Prishtina_logo.svg.png" class="brand-logo" width="50px" height="50px" style="top: 7px;"><a href="#" class="brand-logo" style="left: 55px;font-size: 20px;">Miresevini ne Profesor Dashboard</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Log out</a></li>
+        <li><a href="index.php/logout">Log out</a></li>
       </ul>
     </div>
   </nav>
@@ -16,7 +16,8 @@
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="dorezimet" tabindex="0">Dorezimet</a></li>
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="detyratProf" tabindex="0">Detyrat</a></li>
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="vleresimet" tabindex="0">Vleresimet</a></li>
- <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="dorezodetyren" tabindex="0">FAQ</a></li>        
+ <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="dorezodetyren" tabindex="0">FAQ</a></li>  
+ <li class="bold"><a class="collapsible-header waves-effect waves-teal" style="color:#333" href="logout" tabindex="0">Logout</a></li>      
 </ul>
       </li>
 </ul>
