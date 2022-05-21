@@ -1,8 +1,9 @@
 <?php require('partials/head.php'); ?>
 
+<body>
 <?php require('partials/navProfesori.php'); ?>
 
-<body>
+
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
 <div class="col-md-8" style="position: relative;padding: 20px 20px 20px 20px;">
 
@@ -30,7 +31,7 @@
 					<td><strong> ID e detyres  </strong> </td>
 					<td> <input type="number" name="IDdetyra"> </td>
 				</tr>
-				<td> <button type="submit" name="submit" class="btn btn-success" style="border-radius:0%">Ruaj</button> </td>
+				<td> <button class="btn-floating btn-large waves-effect waves-light red" type="submit"><i class="material-icons" >add</i></button> </td>
 				</table>
 			</form>
 	</fieldset>
