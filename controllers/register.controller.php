@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             "password"=>$password,
             "roli"=>$user_role,
         ]);
-        header("Location: PI_2022/index.php");
+        header("Location: /PI_2022/index.php");
     }else{
         echo "Please enter some valid information!";
     }

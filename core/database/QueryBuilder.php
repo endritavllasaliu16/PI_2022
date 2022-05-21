@@ -39,6 +39,18 @@ class QueryBuilder
     }
 
     public function selectUserById($id){
-        $statement = $this->pdo->prepare("select * from perdoruesi where user_id=${$id} limit 1");
+        $statement = $this->pdo->prepare("select * from perdoruesi where user_id='$id' limit 1");
+    
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_CLASS);
+    }
+
+    public function selectUserByEmail($email){
+        $statement = $this->pdo->prepare("select * from perdoruesi where email='$email' limit 1");
+        
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_CLASS);
     }
 }

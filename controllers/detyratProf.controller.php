@@ -1,8 +1,10 @@
 <?php
+session_start();
 
-//session_start();
+$user_data = check_login($app['database']);
 
-//$user_data = check_login();
-
+if($user_data[0]->roli=="student"){
+    header("Location: /PI_2022/index.php");
+}
 
 require 'views/detyratProf.view.php';

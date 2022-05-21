@@ -13,11 +13,11 @@ $app['database'] = new QueryBuilder(
     Connection::make($app['config']['database'])
 );
 
-function check_login(){
+function check_login($con){
     if(isset($_SESSION['user_id'])){
         $id = $_SESSION['user_id'];
 
-        $user = $app['database']->selectUserById($id); 
+        $user = $con->selectUserById($id); 
 
         if($user){
         return $user;
