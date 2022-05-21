@@ -10,7 +10,7 @@
 require 'views/addDetyra.view.php';
 
  
- $connect = mysqli_connect("localhost:3308", "root", "root", "projekti");
+ $connect = mysqli_connect("localhost", "root", "root", "projekti");
   
  // Check connection
  if($connect === false){
