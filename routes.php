@@ -1,6 +1,7 @@
 <?php
 
 $router->get('PI_2022/index.php', 'controllers/index.controller.php');
+$router->get('PI_2022/index.php/logout', 'controllers/logout.controller.php');
 $router->get('PI_2022/index.php/register', 'controllers/register.controller.php');
 $router->get('PI_2022/index.php/student', 'controllers/student.controller.php');
 $router->get('PI_2022/index.php/profesor', 'controllers/profesor.controller.php');
