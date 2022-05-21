@@ -1,7 +1,8 @@
 <?php
-// session_start();
+session_start();
 
-// $user_data = check_login();
+$user_data = check_login($app['database']);
+
 
 
 
