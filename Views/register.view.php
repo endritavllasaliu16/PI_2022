@@ -9,62 +9,68 @@
     <center><form class="col s12" method="post">
       <div class="row">
         <div class="input-field col s12">
-          <input type="text" id="first_name" name="first_name" class="validate">
+          <input type="text" id="first_name" name="first_name" class="validate" required >
           <label for="first_name">Emri</label>
         </div>
       </div>
         <div class="row">
         <div class="input-field col s12">
-          <input id="last_name" name="last_name" type="text" class="validate">
+          <input id="last_name" name="last_name" type="text" class="validate" required>
           <label for="last_name">Mbiemri</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input type="email" id="email" name="email" class="validate">
+          <input type="email" id="email" name="email" class="validate" required>
           <label for="email">Email</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input type="email" id="konfirmo_email" name="konfirmo_email" class="validate">
+          <input type="email" id="konfirmo_email" name="konfirmo_email" class="validate" required>
           <label for="konfirmo_email">Konfirmo Email</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="username" name="username" type="text" class="validate">
+          <input id="username" name="username" type="text" class="validate" required>
           <label for="email">Username</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" name="password" type="password" class="validate">
-          <label for="password">Password</label>
+          <input id="password" name="password" type="password" class="validate" required>
+          <label for="password">FjaleKalimi</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password_confirm" name="password_confirm" type="password" class="validate" required>
+          <label for="password_confirm">Konfirmo Fjalekalimin</label>
         </div>
       </div>
      <div class="row">
        <label for="radio" style="font-size:18px">Roli</label>
         <p>
           <label>
-            <input name="group1" type="radio" checked id="student_radio" onChange="check()" value="student"/>
+            <input name="roli" type="radio" checked id="student_radio" onChange="check()" value="student"/>
             <span>Student</span>
           </label>
           <label>
-            <input name="group1" type="radio" id="profesor_radio" onChange="check()" value="profesor"/>
+            <input name="roli" type="radio" id="profesor_radio" onChange="check()" value="profesor"/>
             <span>Profesore</span>
           </label>
         </p>
       </div>
-      <div class="row" id="id_input" style="visibility:visible">
+      <div class="row" id="id_input" style="visibility:hidden">
         <div class="input-field col s12">
           <input id="id" name="id" type="number" class="validate">
           <label for="id">ID</label>
         </div>
       </div>
-      <div class="row" id="index_input" style="visibility:hidden">
+      <div class="row" id="index_input" style="visibility:visible">
         <div class="input-field col s12">
-          <input id="index" name="index" type="number" class="validate" >
+          <input id="index" name="index" type="number" class="validate">
           <label for="index">Indeksi</label>
         </div>
       </div>
@@ -85,14 +91,16 @@
 
   function check(){
   if(student_radio[0].checked){
-    index_input[0].style.visibility = "hidden";
-      id_input[0].style.visibility = "visible";
+      id_input[0].style.visibility = "hidden";
+      index_input[0].style.visibility = "visible";
+      
       console.log("s");
     }
 
   if(profesor_radio[0].checked){
-      id_input[0].style.visibility = "hidden";
-      index_input[0].style.visibility = "visible";
+    index_input[0].style.visibility = "hidden";
+      id_input[0].style.visibility = "visible";
+      
       console.log("p");
     }
   }
