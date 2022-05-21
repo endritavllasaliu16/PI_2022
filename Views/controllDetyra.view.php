@@ -20,7 +20,7 @@
 			<th>Vleresimi</th>		
 			</tr>";
 			$cnt = 1;
-	$connection = mysqli_connect("localhost", "root", "root", "projekti");
+	$connection = mysqli_connect("localhost:3308", "root", "root", "projekti");
 	$sql = "SELECT ID, emri_studentit, titulli, teksti_detyres, foto, data_dorezimit FROM detyrat_e_dorezuara";
     $result = $connection->query($sql);
     while($row = $result->fetch_assoc())	{
@@ -49,7 +49,7 @@
 				</td>
 			
 				<td>
-				<a href="controllDetyra2.php?editassid"> <input type="button" Value="Vlereso"  class="btn btn-success btn-sm" style="border-radius:0%"  data-toggle="modal" data-target="#myModal"></a>
+				<a href="controllDetyra2.view.php"> <input type="button" Value="Vlereso"  class="btn btn-success btn-sm" style="border-radius:0%"  data-toggle="modal" data-target="#myModal"></a>
 				</td>
 			</tr>
 			<?php
