@@ -67,7 +67,7 @@ class QueryBuilder
     
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS);
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function updateUserProfile($user_id, $username,$password){
