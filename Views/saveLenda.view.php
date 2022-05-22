@@ -2,6 +2,10 @@
 
 <?php require('partials/navProfesori.php'); ?>
 
+<script language="javascript">
+    document.title = "Lenda u ruajt!";
+</script>
+
 <body>
     <center>
         <h4 style="color: green;">Lenda u ruajt me sukses!</h4>

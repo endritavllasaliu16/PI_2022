@@ -1,7 +1,9 @@
 <?php require('partials/head.php'); ?>
 
 <?php require('partials/navProfesori.php'); ?>
-
+<script language="javascript">
+    document.title = "Lenda u ndryshua!";
+</script>
 <body>
     <center>
         <h4 style="color: green;">Lenda u ndryshua me sukses!</h4>

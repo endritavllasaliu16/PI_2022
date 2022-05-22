@@ -19,6 +19,7 @@ $router->get('PI_2022/index.php/vleresimetProfesor', 'controllers/vleresimetProf
 $router->get('PI_2022/index.php/userprofile', 'controllers/userprofile.controller.php');
 $router->get('PI_2022/index.php/shtoLenden', 'controllers/shtoLenden.controller.php');
 $router->get('PI_2022/index.php/modifikoLenden', 'controllers/modifikoLenden.controller.php');
+$router->get('PI_2022/index.php/faqProfesori', 'controllers/faqProfesori.controller.php');
 $router->post('PI_2022/index.php/saveLenda', 'controllers/saveLenda.controller.php');
 $router->post('PI_2022/index.php/updateLenda', 'controllers/updateLenda.controller.php');
 $router->post('PI_2022/index.php/register', 'controllers/register.controller.php');
