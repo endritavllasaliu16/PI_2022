@@ -14,12 +14,13 @@ $router->get('PI_2022/index.php/dorezimet', 'controllers/dorezimet.controller.ph
 $router->get('PI_2022/index.php/detyratProf', 'controllers/detyratProf.controller.php');
 $router->get('PI_2022/index.php/addDetyra', 'controllers/addDetyra.controller.php');
 $router->get('PI_2022/index.php/controllDetyra', 'controllers/controllDetyra.controller.php');
-$router->get('PI_2022/index.php/controllDetyra2', 'controllers/controllDetyra2.controller.php');
 $router->get('PI_2022/index.php/lendetStudent', 'controllers/lendetStudent.controller.php');
 $router->get('PI_2022/index.php/vleresimetProfesor', 'controllers/vleresimetProfesor.controller.php');
 $router->get('PI_2022/index.php/userprofile', 'controllers/userprofile.controller.php');
 $router->get('PI_2022/index.php/shtoLenden', 'controllers/shtoLenden.controller.php');
+$router->get('PI_2022/index.php/modifikoLenden', 'controllers/modifikoLenden.controller.php');
 $router->post('PI_2022/index.php/saveLenda', 'controllers/saveLenda.controller.php');
+$router->post('PI_2022/index.php/updateLenda', 'controllers/updateLenda.controller.php');
 $router->post('PI_2022/index.php/register', 'controllers/register.controller.php');
 $router->post('PI_2022/index.php', 'controllers/index.controller.php');
 $router->post('PI_2022/index.php/userprofile', 'controllers/userprofile.controller.php');

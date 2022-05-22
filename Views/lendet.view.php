@@ -33,7 +33,7 @@ if ($result->num_rows > 0) {
 // output data of each row
 while($row = $result->fetch_assoc()) {
 	echo "<tr><td>" . $row["ID_lenda"]. "</td><td>" . $row["emri"] . "</td><td>"
-	. $row["kredi"]. "</td><td>" . $row["semestri"]. "</td><td>" . "<a class='btn-floating btn-small waves-effect waves-light red' href='#'><i class='material-icons' >create</i></a> </td>" . "</td></tr>";
+	. $row["kredi"]. "</td><td>" . $row["semestri"]. "</td><td>" . "<a class='btn-floating btn-small waves-effect waves-light red' href='modifikoLenden?id=$row[ID_lenda]'><i class='material-icons' >create</i></a> </td>" . "</td></tr>";
 }
 echo "</table>";
 } else { echo "0 results"; }
