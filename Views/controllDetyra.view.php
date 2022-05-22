@@ -4,9 +4,8 @@
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
 <div class="col-md-8" style="position: relative;padding: 20px 20px 20px 20px;">
 
-   <fieldset>
  <h5> Detajet e detyrave </h5>
- <table class='table table-striped table-hover' style='width:100%'>
+ <table class='table table-striped table-hover'>
 			<tr>
 			<th>ID</th>
 			<th>Studenti</th>
@@ -18,8 +17,7 @@
 <br>
 <br>
 <?php 
-	$tasks=$app['database']->selectDetyraByVleresimi("detyrat_e_dorezuara");
-	foreach($tasks as $value){
+foreach($tasks as $value){
 				?>
 			<tr>
 				<td>
