@@ -8,7 +8,7 @@ if($user_data[0]->roli=="student"){
 }
 
 $id = $_GET['id'];
-$conn = mysqli_connect("localhost", "root", "root", "projekti");
+$conn = mysqli_connect("localhost", "root", "", "projekti");
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);

@@ -2,18 +2,13 @@
 
  <?php require('partials/nav.php'); ?>
  <body>
- <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
+ <center>
+ <div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
  <div class="container"  style="position: relative;padding: 20px 20px 20px 20px;">
-	<div class="row">
-		<div class="col-md-12 text-center">
-          <a href="shtoLenden.view.php"><button  href="" type="submit" class="btn btn-primary" style="border-radius:10%">Shto Lenden</button></a>
-		</div>
-	</div>
-</div>
+	<div class="row card">
 <br>
 <br>
-<div class="row">
-<table>
+<table style="padding: 20px 20px 20px 20px;">
 <tr>
 <th>Id e Lendes</th>
 <th>Emri</th>
@@ -21,7 +16,7 @@
 <th>Semestri</th>
 </tr>
 <?php
-$conn = mysqli_connect("localhost", "root", "root", "projekti");
+$conn = mysqli_connect("localhost", "root", "", "projekti");
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
@@ -38,6 +33,8 @@ echo "</table>";
 } else { echo "0 results"; }
 $conn->close();
 ?>
+</div>
+</div>
 </div>
 </center>
 </body>

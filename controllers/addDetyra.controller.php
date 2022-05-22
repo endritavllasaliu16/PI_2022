@@ -12,8 +12,6 @@ if($user_data[0]->roli=="student"){
 }
 
 
-require 'views/addDetyra.view.php';
-
  
 //  $connect = mysqli_connect("localhost", "root", "root", "projekti");
   
@@ -22,12 +20,12 @@ require 'views/addDetyra.view.php';
 //      die("ERROR: Could not connect to the database. "
 //          . mysqli_connect_error());
 //  }
-  
+if($_SERVER['REQUEST_METHOD'] == "POST"){
  $ID_detyra =  $_REQUEST['IDdetyra'];
- $titulli = $_REQUEST['EmriDetyres'];
- $pershkrimi =  $_REQUEST['PershkrimiDetyres'];
- $deadline = $_REQUEST['Deadline'];
- $lenda = $_REQUEST['Lenda'];
+ $titulli = $_REQUEST['titulli'];
+ $pershkrimi =  $_REQUEST['pershkrimi'];
+ $deadline = $_REQUEST['deadline'];
+ $lenda = $_REQUEST['lenda'];
   
  $app['database']->insert("detyrat",[
             "ID_detyra"=>$ID_detyra,
@@ -36,6 +34,22 @@ require 'views/addDetyra.view.php';
             "deadline"=> $deadline,
             "lenda"=> $lenda,
         ]);
+}
+$conn = mysqli_connect("localhost", "root", "", "projekti");
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT ID_detyra FROM detyrat";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+// output data of each row
+while($row = $result->fetch_assoc()) {
+  $ID_detyra = $row['ID_detyra'] + 1;
+}
+}
+else{
+  $ID_detyra = 1;
+}
 //  $sql = "INSERT INTO detyrat  VALUES ('$ID_detyra',
 //      '$titulli','$pershkrimi','$deadline','$lenda')";
   
@@ -48,6 +62,7 @@ require 'views/addDetyra.view.php';
 
   
  //mysqli_close($connect);
+require 'views/addDetyra.view.php';
  ?>
 
 </center>

@@ -7,7 +7,7 @@ if($user_data[0]->roli=="student"){
     header("Location: /PI_2022/index.php");
 }
 
-$conn = mysqli_connect("localhost", "root", "root", "projekti");
+$conn = mysqli_connect("localhost", "root", "", "projekti");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }

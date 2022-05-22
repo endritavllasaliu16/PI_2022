@@ -6,27 +6,27 @@
 
    <fieldset>
 		<legend>Shto Detyren</legend>
-			<form action="" method="GET" name="AddAssessment">
+			<form method="post" name="AddAssessment">
 				<table class="table table-hover" style="margin: left 100px;">
 				<tr>
 					<td> <strong> Titulli i detyres  </strong> </td>
-					<td> <input type="text" name="EmriDetyres"> </td>
+					<td> <input type="text" name="titulli"> </td>
                 </tr>
 				<tr>
 				    <td> <strong> Pershkrimi i detyres </strong> </td>
-				    <td> <textarea name="PershkrimiDetyres" rows="5" cols="150"></textarea> </td>
+				    <td> <textarea name="pershkrimi" rows="5" cols="150"></textarea> </td>
 				</tr>
 				<tr>
 				    <td> <strong> Deadline </strong> </td>
-				    <td> <input type="date" name="Deadline"> </td>
+				    <td> <input type="date" name="deadline"> </td>
 				</tr>
 				<tr>
 					<td> <strong> Lenda </strong> </td>
-					<td> <textarea name="Lenda" rows="5" cols="150"></textarea> </td>
+					<td> <textarea name="lenda" rows="5" cols="150"></textarea> </td>
 				</tr>
 				<tr>
 					<td><strong> ID e detyres  </strong> </td>
-					<td> <input type="number" name="IDdetyra"> </td>
+					<td> <input type="number" name="IDdetyra" value="<?php echo $ID_detyra ?>"readonly> </td>
 				</tr>
 				<td> <button class="btn-floating btn-large waves-effect waves-light red" type="submit"><i class="material-icons" >add</i></button> </td>
 				</table>
