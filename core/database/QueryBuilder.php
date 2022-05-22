@@ -59,7 +59,7 @@ class QueryBuilder
     
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS);
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function selectAssigmentsByVleresimi($table){
@@ -67,9 +67,9 @@ class QueryBuilder
     
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS);
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
-    
+
     public function updateUserProfile($user_id, $username,$password){
         $sql = "update perdoruesi set username='$username',password='$password'  where user_id ='$user_id'";
         try {
