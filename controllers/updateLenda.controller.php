@@ -8,6 +8,11 @@ if($user_data[0]->roli=="student"){
 }
 require 'views/updateLenda.view.php';
 
+$mysqli = mysqli_connect("localhost", "root", "root", "projekti");
+if ($mysqli->connect_error) {
+die("Connection failed: " . $mysqli->connect_error);
+}
+
 if(isset($_POST['update']))
 {	
 
@@ -20,14 +25,13 @@ if(empty($emri)) {
 echo '<font color="red">Name field is empty.</font><br>';
 }
 if(empty($kredi)) {
-echo '<font color="red">Age field is empty.</font><br>';
+echo '<font color="red">Credits field is empty.</font><br>';
 }
 if(empty($semestri)) {
-echo '<font color="red">Email field is empty.</font><br>';
+echo '<font color="red">Semestri field is empty.</font><br>';
 }		
 } else {	
 $result = mysqli_query($mysqli, "UPDATE lendet SET emri='$emri',kredi='$kredi',semestri='$semestri' WHERE ID_lenda=$id");
-header("Location: index.php");
 }
 }
 ?>

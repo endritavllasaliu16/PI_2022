@@ -36,7 +36,7 @@
           <label for="semestri">Semestri</label>
         </div>
       </div>
-      <input type="submit" name="update" value="Update" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">create</i></input>
+      <button name="update" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">create</i></button>
     </form></center>
 </div>
 </div>
