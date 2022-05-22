@@ -54,6 +54,22 @@ class QueryBuilder
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
 
+    public function selectDetyraByVleresimi($table){
+        $statement = $this->pdo->prepare("select * from {$table} where vleresimi is NULL");
+    
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_CLASS);
+    }
+
+    public function selectAssigmentsByVleresimi($table){
+        $statement = $this->pdo->prepare("select * from {$table} where vleresimi is NOT NULL");
+    
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_CLASS);
+    }
+    
     public function updateUserProfile($user_id, $username,$password){
         $sql = "update perdoruesi set username='$username',password='$password'  where user_id ='$user_id'";
         try {

@@ -3,11 +3,13 @@
  <?php require('partials/navProfesori.php'); ?>
 
  <?php
+
 	$connection = mysqli_connect("localhost:3308", "root", "root", "projekti");
 	$make = $_GET[ 'makeid' ];
-	$sql = "SELECT * FROM detyrat_e_dorezuara WHERE ID=$make";
+	$sql = "SELECT ID,titulli FROM detyrat_e_dorezuara";
     $result = $connection->query($sql);
-	while ( $row = $result->fetch_assoc() ) {
+	while ( $row = $result->fetch_assoc() ) 
+	{
 	?>
     <fieldset>
 		<legend>Make Result</legend>
@@ -35,6 +37,7 @@
 		<td><button type="submit" name="make" class="btn btn-success" style="border-radius:0%">Publish</button> </td>
 		<?php
 			}
+	
 		?>
 		<?php 
         if($_SERVER['make'] == "POST")	{

@@ -2,15 +2,12 @@
 <?php require('partials/navProfesori.php'); ?>
  <body>
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
- <div class="container"  style="position: relative;padding: 20px 20px 20px 20px;">
+<div class="col-md-8" style="position: relative;padding: 20px 20px 20px 20px;">
+
+   <fieldset>
  <h5> Detajet e detyrave </h5>
-</div>
-<br>
-<br>
-<?php 
-	echo "<table class='table table-striped table-hover' style='width:100%'>
+ <table class='table table-striped table-hover' style='width:100%'>
 			<tr>
-			<th>#</th>
 			<th>ID</th>
 			<th>Studenti</th>
 			<th>Titulli</th>
@@ -18,19 +15,17 @@
 			<th>Upload</th>
 			<th>Data e dorezimit</th>
 			<th>Vleresimi</th>		
-			</tr>";
-			$cnt = 1;
-	$connection = mysqli_connect("localhost:3308", "root", "root", "projekti");
-	$sql = "SELECT ID, emri_studentit, titulli, teksti_detyres, foto, data_dorezimit FROM detyrat_e_dorezuara";
-    $result = $connection->query($sql);
-    while($row = $result->fetch_assoc())	{
+<br>
+<br>
+<?php 
+	$connection=$app['database']->selectDetyraByVleresimi("detyrat_e_dorezuara");
+    $connection=array_map(function ($task)	{
+		$value=$task['ID'];
+
 				?>
 			<tr>
 				<td>
-					<?PHP echo $cnt;?>
-				</td>
-				<td>
-					<?PHP echo $row['ID'];?>
+					<?PHP echo $value;?>
 				</td>
 				<td>
 					<?PHP echo $row['emri_studentit'];?>
@@ -49,11 +44,11 @@
 				</td>
 			
 				<td>
-				<a href="controllDetyra2.view.php"> <input type="button" Value="Vlereso"  class="btn btn-success btn-sm" style="border-radius:0%"  data-toggle="modal" data-target="#myModal"></a>
+				<a href="controllDetyra2?makeid"> <input type="button" Value="Vlereso"  class="btn btn-success btn-sm" style="border-radius:0%"  data-toggle="modal" data-target="#myModal"></a>
 				</td>
 			</tr>
 			<?php
-		$cnt++;	}
+	}, $connection);	
 			?>	
 			</table>
 
