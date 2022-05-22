@@ -1,7 +1,9 @@
 <?php require('partials/head.php'); ?>
 
  <?php require('partials/navProfesori.php'); ?>
-
+ <script language="javascript">
+    document.title = "Shto lenden";
+</script>
  <body>
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
     <div class="container">
