@@ -37,6 +37,7 @@
         </div>
       </div>
       <button name="update" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">create</i></button>
+      <button name="delete" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></button>
     </form></center>
 </div>
 </div>

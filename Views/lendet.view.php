@@ -19,7 +19,7 @@
 <th>Emri</th>
 <th>Kredite</th>
 <th>Semestri</th>
-<th>Ndryshoo</th>
+<th>Ndrysho</th>
 </tr>
 <?php
 $conn = mysqli_connect("localhost", "root", "root", "projekti");

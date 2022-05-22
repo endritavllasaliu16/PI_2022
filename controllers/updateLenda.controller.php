@@ -13,6 +13,13 @@ if ($mysqli->connect_error) {
 die("Connection failed: " . $mysqli->connect_error);
 }
 
+if(isset($_POST['delete']))
+{
+    $id = mysqli_real_escape_string($mysqli, $_POST['ID_lenda']);
+    $delete = mysqli_query($mysqli, "DELETE FROM lendet WHERE ID_lenda=$id");
+    header("Location: ../index.php/lendet");
+}
+
 if(isset($_POST['update']))
 {	
 
