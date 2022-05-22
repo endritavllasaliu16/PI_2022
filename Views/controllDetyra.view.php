@@ -39,7 +39,7 @@ foreach($tasks as $value){
 				</td>
 			
 				<td>
-				<a href="controllDetyra2?makeid"> <input type="button" Value="Vlereso"  class="btn btn-success btn-sm" style="border-radius:0%"  data-toggle="modal" data-target="#myModal"></a>
+				<a href="markDetyra?makeid"> <input type="button" Value="Vlereso"  class="btn btn-success btn-sm" style="border-radius:0%"  data-toggle="modal" data-target="#myModal"></a>
 				</td>
 			</tr>
 			<?php
