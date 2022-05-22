@@ -18,29 +18,27 @@
 <br>
 <br>
 <?php 
-	$connection=$app['database']->selectDetyraByVleresimi("detyrat_e_dorezuara");
-    $connection=array_map(function ($task)	{
-		$value=$task['ID'];
-
+	$tasks=$app['database']->selectDetyraByVleresimi("detyrat_e_dorezuara");
+	foreach($tasks as $value){
 				?>
 			<tr>
 				<td>
-					<?PHP echo $value;?>
+				<?php echo $value['ID']; ?>
 				</td>
 				<td>
-					<?PHP echo $row['emri_studentit'];?>
+					<?PHP echo $value['emri_studentit'];?>
 				</td>
 				<td>
-					<?PHP echo $row['titulli'];?>
+					<?PHP echo $value['titulli'];?>
 				</td>
 				<td>
-					<?PHP echo $row['teksti_detyres'];?>
+					<?PHP echo $value['teksti_detyres'];?>
 				</td>
 				<td>
-					<?PHP echo $row['foto'];?>
+					<?PHP echo $value['foto'];?>
 				</td>
 				<td>
-					<?PHP echo $row['data_dorezimit'];?>
+					<?PHP echo $value['data_dorezimit'];?>
 				</td>
 			
 				<td>
@@ -48,7 +46,7 @@
 				</td>
 			</tr>
 			<?php
-	}, $connection);	
+	}	
 			?>	
 			</table>
 
