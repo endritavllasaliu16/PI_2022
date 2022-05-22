@@ -1,10 +1,7 @@
 <?php require('partials/head.php'); ?>
-
-<body>
 <?php require('partials/navProfesori.php'); ?>
-
-
- <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
+<body>
+<center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
 <div class="col-md-8" style="position: relative;padding: 20px 20px 20px 20px;">
 
    <fieldset>
@@ -36,11 +33,8 @@
 			</form>
 	</fieldset>
 </div>
-</div>
 </center>
 </body>
-
-
 
  
 <?php require('partials/footer.php'); ?>

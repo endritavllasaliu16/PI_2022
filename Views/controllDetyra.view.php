@@ -15,7 +15,6 @@
 			<th>Data e dorezimit</th>
 			<th>Vleresimi</th>		
 <br>
-<br>
 <?php 
 foreach($tasks as $value){
 				?>
@@ -46,7 +45,7 @@ foreach($tasks as $value){
 			<?php
 	}	
 			?>	
-			</table>
+	</table>
 
 
 </div>
