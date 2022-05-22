@@ -15,7 +15,7 @@ class QueryBuilder
 
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS);
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function insert($table, $parameters)
@@ -81,4 +81,25 @@ class QueryBuilder
            echo $e->getMessage();
         }
     }
+
+    public function selectAssigmentsByID($make){
+        $statement = $this->pdo->prepare("select * from detyrat_e_dorezuara where ID='$make'");
+    
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function updateVleresimi($ID,$vleresimi){
+        $sql="update detyrat_e_dorezuara set vleresimi='$vleresimi' where ID='$ID";
+        try {
+            $statement = $this->pdo->prepare($sql);
+            
+            $statement->execute($parameters);
+        } catch (Exception $e) {
+            
+           echo $e->getMessage();
+        }
+    }
+
 }
