@@ -2,32 +2,13 @@
 
  <?php require('partials/navProfesori.php'); ?>
 
- <?php
-$conn = mysqli_connect("localhost", "root", "root", "projekti");
-// Check connection
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
-}
-$sql = "SELECT ID_lenda, emri, kredi, semestri FROM lendet";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-// output data of each row
-while($row = $result->fetch_assoc()) {
-  $ID_lenda = $row['ID_lenda'] + 1;
-}
-}
-else{
-  $ID_lenda = 1;
-}
-  ?>
-
  <body>
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
     <div class="container">
       <br><br>
       <div class="card"style="position: relative;padding: 20px 20px 20px 20px; left: 150px;">
       <div class="row">
-    <center><form action="saveLenda.view.php" method="post" class="col s12">
+    <center><form action="saveLenda" method="post" class="col s12">
     <div class="row">
         <div class="input-field col s12">
           <input name="ID_lenda" id="lenda_id" type="number" class="validate" value="<?php echo $ID_lenda; ?>" readonly>

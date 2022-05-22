@@ -4,7 +4,7 @@
 
 <body>
     <center>
-        <h4 style="color: green;">Lenda u ruajt me sukses!</h4>
+        <h4 style="color: green;">Lenda u ndryshua me sukses!</h4>
         <table style="width: 30%;">
             <tr>
                 <td>ID e Lendes</td>
