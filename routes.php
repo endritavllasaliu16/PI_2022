@@ -10,6 +10,8 @@ $router->get('PI_2022/index.php/lendet', 'controllers/lendet.controller.php');
 $router->get('PI_2022/index.php/dorezodetyren', 'controllers/dorezodetyren.controller.php');
 $router->get('PI_2022/index.php/vleresimet', 'controllers/vleresimet.controller.php');
 $router->get('PI_2022/index.php/dorezimet', 'controllers/dorezimet.controller.php');
+$router->get('PI_2022/index.php/faqProfesori', 'controllers/faqProfesori.controller.php');
+$router->get('PI_2022/index.php/faqStudenti', 'controllers/faqStudenti.controller.php');
 //$router->post('PI_2022/index.php/names', 'controllers/add-name.php');
 $router->get('PI_2022/index.php/detyratProf', 'controllers/detyratProf.controller.php');
 $router->get('PI_2022/index.php/addDetyra', 'controllers/addDetyra.controller.php');
@@ -28,5 +30,6 @@ $router->get('PI_2022/index.php/markDetyra', 'controllers/markDetyra.controller.
 $router->get('PI_2022/index.php/vleresimetDetails', 'controllers/vleresimetDetails.controller.php');
 $router->post('PI_2022/index.php/dorezodetyren', 'controllers/dorezodetyren.controller.php');
 $router->post('PI_2022/index.php/addDetyra', 'controllers/addDetyra.controller.php');
+
 
 ?>
