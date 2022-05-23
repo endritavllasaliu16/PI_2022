@@ -10,22 +10,14 @@
    <label>Zgjedh lenden e regjistruar</label>
   <select name="lenda" class="browser-default" required>
     <?php 
-                // use a while loop to fetch data 
-                // from the $all_categories variable 
-                // and individually display as an option
                 while ($lendet = mysqli_fetch_array(
-                        $all_lendet,MYSQLI_ASSOC)):; 
-            ?>
-                <option value="<?php echo $lendet["ID_lenda"];
-                    // The value we usually set is the primary key
-                ?>">
-                    <?php echo $lendet["emri"];
-                        // To show the category name to the user
-                    ?>
+                        $all_lendet,MYSQLI_ASSOC)):;
+    ?>
+                <option value="<?php echo $lendet["ID_lenda"];?>">
+                    <?php echo $lendet["emri"];?>
                 </option>
             <?php 
-                endwhile; 
-                // While loop must be terminated
+                endwhile;
             ?>
   </select>
   <br>
@@ -41,22 +33,14 @@
      <label>Zgjedh detyren</label>
   <select name="detyrat"class="browser-default" required>
     <?php 
-                // use a while loop to fetch data 
-                // from the $all_categories variable 
-                // and individually display as an option
                 while ($detyrat = mysqli_fetch_array(
                         $all_detyrat,MYSQLI_ASSOC)):; 
-            ?>
-                <option value="<?php echo $detyrat["ID_detyra"];
-                    // The value we usually set is the primary key
-                ?>">
-                    <?php echo $detyrat["titulli"];
-                        // To show the category name to the user
-                    ?>
+    ?>
+                <option value="<?php echo $detyrat["ID_detyra"];?>">
+                    <?php echo $detyrat["titulli"];?>
                 </option>
             <?php 
                 endwhile; 
-                // While loop must be terminated
             ?>
   </select>
   <br>       
