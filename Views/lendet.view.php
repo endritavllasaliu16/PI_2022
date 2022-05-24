@@ -25,22 +25,27 @@
 <th>Ndrysho</th>
 </tr>
 <?php
-$conn = mysqli_connect("localhost", "root", "", "projekti");
-// Check connection
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
-}
-$sql = "SELECT ID_lenda, emri, kredi, semestri FROM lendet";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-// output data of each row
-while($row = $result->fetch_assoc()) {
-	echo "<tr><td>" . $row["ID_lenda"]. "</td><td>" . $row["emri"] . "</td><td>"
-	. $row["kredi"]. "</td><td>" . $row["semestri"]. "</td><td>" . "<a class='btn-floating btn-small waves-effect waves-light red' href='modifikoLenden?id=$row[ID_lenda]'><i class='material-icons' >create</i></a> </td>" . "</td></tr>";
-}
-echo "</table>";
-} else { echo "0 results"; }
-$conn->close();
+foreach($tasks as $value){
+	?>
+<tr>
+	<td>
+	<?php echo $value['ID_lenda']; ?>
+	</td>
+	<td>
+		<?PHP echo $value['emri'];?>
+	</td>
+	<td>
+		<?PHP echo $value['kredi'];?>
+	</td>
+	<td>
+		<?PHP echo $value['semestri'];?>
+	</td>
+	<td>
+	<a class='btn-floating btn-small waves-effect waves-light red' href='modifikoLenden?id=$row[ID_lenda]'><i class='material-icons' >create</i></a> 
+	</td>
+</tr>
+<?php
+}	
 ?>
 </div>
 </center>
