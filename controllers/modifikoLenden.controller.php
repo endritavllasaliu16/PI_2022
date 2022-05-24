@@ -8,17 +8,16 @@ if($user_data[0]->roli=="student"){
 }
 
 $id = $_GET['id'];
-$conn = mysqli_connect("localhost", "root", "", "projekti");
+$conn = mysqli_connect("localhost", "root", "root", "projekti");
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT * FROM lendet WHERE ID_lenda=$id";
+$sql = "SELECT emri, kredi, semestri FROM lendet WHERE ID_lenda=$id";
 $result = $conn->query($sql);
 
 while($res = mysqli_fetch_array($result))
 {
-	$ID_lenda = $res['ID_lenda'];
     $emri = $res['emri'];
     $kredi = $res['kredi'];
     $semestri = $res['semestri'];
