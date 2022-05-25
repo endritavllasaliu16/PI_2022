@@ -2,7 +2,7 @@
     <center>
 <?php
 
-
+include 'connect.php';
 session_start();
 
 $user_data = check_login($app['database']);
@@ -35,12 +35,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             "lenda"=> $lenda,
         ]);
 }
-$conn = mysqli_connect("localhost", "root", "", "projekti");
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
-}
 $sql = "SELECT ID_detyra FROM detyrat";
-$result = $conn->query($sql);
+$result = $mysqli->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
 while($row = $result->fetch_assoc()) {

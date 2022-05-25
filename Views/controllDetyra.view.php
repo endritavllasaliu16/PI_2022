@@ -9,9 +9,9 @@
 			<tr>
 			<th>ID</th>
 			<th>Studenti</th>
-			<th>Titulli</th>
-			<th>Pershkrim</th>
-			<th>Upload</th>
+			<th>Lenda</th>
+			<th>Semestri</th>
+			<th>Detajet</th>
 			<th>Data e dorezimit</th>
 			<th>Vleresimi</th>		
 <br>
@@ -26,13 +26,13 @@ foreach($tasks as $value){
 					<?PHP echo $value['emri_studentit'];?>
 				</td>
 				<td>
-					<?PHP echo $value['titulli'];?>
+					<?PHP echo $value['lenda'];?>
 				</td>
 				<td>
-					<?PHP echo $value['teksti_detyres'];?>
+					<?PHP echo $value['semestri'];?>
 				</td>
 				<td>
-					<?PHP echo $value['foto'];?>
+					<?PHP echo $value['detajet'];?>
 				</td>
 				<td>
 					<?PHP echo $value['data_dorezimit'];?>

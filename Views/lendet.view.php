@@ -41,7 +41,7 @@ foreach($tasks as $value){
 		<?PHP echo $value['semestri'];?>
 	</td>
 	<td>
-	<a class='btn-floating btn-small waves-effect waves-light red' href='modifikoLenden?id=$row[ID_lenda]'><i class='material-icons' >create</i></a> 
+	<a class='btn-floating btn-small waves-effect waves-light red' href='modifikoLenden?id=<?php echo $value['ID_lenda']?>'><i class='material-icons' >create</i></a> 
 	</td>
 </tr>
 <?php

@@ -17,7 +17,7 @@
 <th>Semestri</th>
 </tr>
 <?php
-$conn = mysqli_connect("localhost", "root", "", "projekti");
+$conn = mysqli_connect("localhost", "root", "root", "projekti");
 if ($conn->connect_error) {
 die("Lidhja u shkput: " . $conn->connect_error);
 }

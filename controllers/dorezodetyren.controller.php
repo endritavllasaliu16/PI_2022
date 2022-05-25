@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'connect.php';
 $user_data = check_login($app['database']);
 $emri_studentit = $user_data[0]->emri;
 if($user_data[0]->roli=="profesor"){
@@ -20,21 +21,20 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 }
   
     // Connect to database 
-    $con = mysqli_connect("localhost","root","","projekti");
-    if(isset($_POST['delete']))
-{
-    $id = mysqli_real_escape_string($con, $_POST['ID_detyra']);
-    $delete = mysqli_query($con, "DELETE FROM detyrat WHERE ID_detyra=$id");
-    header("Location: ../index.php/detyratemia");
-}
+//     if(isset($_POST['delete']))
+// {
+//     $id = mysqli_real_escape_string($mysqli, $_POST['ID_detyra']);
+//     $delete = mysqli_query($mysqli, "DELETE FROM detyrat WHERE ID_detyra=$id");
+//     header("Location: ../index.php/detyratemia");
+// }
     // mysqli_connect("servername","username","password","database_name")
    
     // Get all the categories from category table
     $sql = "SELECT * FROM `lendet`";
-    $all_lendet = mysqli_query($con,$sql);
+    $all_lendet = mysqli_query($mysqli,$sql);
 
     $sql = "SELECT * FROM `detyrat`";
-    $all_detyrat = mysqli_query($con,$sql);
+    $all_detyrat = mysqli_query($mysqli,$sql);
 
         
     

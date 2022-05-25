@@ -1,17 +1,14 @@
 <?php
 session_start();
 
+include 'connect.php';
+
 $user_data = check_login($app['database']);
 
 if($user_data[0]->roli=="student"){
     header("Location: /PI_2022/index.php");
 }
 require 'views/updateLenda.view.php';
-
-$mysqli = mysqli_connect("localhost", "root", "", "projekti");
-if ($mysqli->connect_error) {
-die("Connection failed: " . $mysqli->connect_error);
-}
 
 if(isset($_POST['delete']))
 {

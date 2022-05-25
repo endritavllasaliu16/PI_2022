@@ -20,7 +20,7 @@
   <div class="card-block">
     <h4 class="card-title">Dorzimet</h4>
     <p class="card-text">Shiko dorzimet e bera nga studentet</p>
-    <a href="dorezimet" class="btn btn-primary">SHKO KETU</a>
+    <a href="controllDetyra" class="btn btn-primary">SHKO KETU</a>
   </div>
 </div>
 
