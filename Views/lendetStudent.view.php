@@ -23,6 +23,25 @@
 <th>Kredite</th>
 <th>Semestri</th>
 </tr>
+foreach($tasks as $value){
+	?>
+<tr>
+	<td>
+	<?php echo $value['ID_lenda']; ?>
+	</td>
+	<td>
+		<?PHP echo $value['emri'];?>
+	</td>
+	<td>
+		<?PHP echo $value['kredi'];?>
+	</td>
+	<td>
+		<?PHP echo $value['semestri'];?>
+	</td>
+</tr>
+<?php
+}	
+?>
 </div>
 </center>
 </body>
