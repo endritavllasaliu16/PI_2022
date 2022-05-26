@@ -1,28 +1,25 @@
 <?php require('partials/head.php'); ?>
 
- <?php require('partials/navProfesori.php'); ?>
+ <?php require('partials/nav.php'); ?>
  <script language="javascript">
     document.title = "Lendet";
 </script>
  <body>
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
  <div class="container"  style="position: relative;padding: 20px 20px 20px 20px;">
-	<div class="row">
-		<div class="col-md-12 text-center">
-          <a href="shtoLenden"><button  href="" type="submit" class="btn btn-primary" style="border-radius:10%">Shto Lenden</button></a>
-		</div>
-	</div>
 </div>
 <br>
 <br>
 <div class="row">
-<table>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<table id="myTable" style="padding: 20px 20px 20px 20px;">
 <tr>
 <th>Id e Lendes</th>
 <th>Lenda</th>
 <th>Kredite</th>
 <th>Semestri</th>
 </tr>
+<?php
 foreach($tasks as $value){
 	?>
 <tr>
@@ -45,5 +42,26 @@ foreach($tasks as $value){
 </div>
 </center>
 </body>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
   
 <?php require('partials/footer.php'); ?>
