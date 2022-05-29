@@ -41,7 +41,10 @@
                endforeach;
             ?>
   </select>
-   <br>       
+   <br> 
+   <!-- <label>Shto dokumentimin</label>
+   <input type="file" name="foto" placeholder="Dokumentimi">
+  <br>       -->
   <input type="text" name="detajet" placeholder="Detajet e detyres">
   <br>
   <br> 
