@@ -11,14 +11,15 @@ if($_SERVER['REQUEST_METHOD']=="POST")
 
     if(
         !empty($user_email) && 
-        !empty($password) 
+        !empty($password) &&
+        validatePassword1($password)
     )
     {
         $user_data = $app['database']->selectUserByEmail($user_email);
-        //var_dump($user_data);
-       // var_dump($user_data[0]->emri);
+        // var_dump(hash("sha1",$password));
+        // die;
         
-        if($user_data[0]->password == $password){ 
+        if($user_data[0]->password == hash("md5",$password)){ 
             $_SESSION['user_id'] = $user_data[0]->user_id;
 
             if($user_data[0]->roli=="student"){
