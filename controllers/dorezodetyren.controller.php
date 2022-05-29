@@ -10,10 +10,12 @@ if($user_data[0]->roli=="profesor"){
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     $lenda=$_POST['lenda'];
+    $titulli=$_POST['titulli'];
     $semestri=$_POST['semestri'];
     $detajet=$_POST['detajet'];
  $app['database']->insert("detyrat_e_dorezuara",[
             "emri_studentit"=> $emri_studentit,
+            "titulli"=> $titulli,
             "lenda"=> $lenda,
             "semestri"=> $semestri,
             "detajet"=> $detajet,

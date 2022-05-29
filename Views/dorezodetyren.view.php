@@ -30,12 +30,12 @@
   <br>
 
   <label>Zgjedh detyren</label>
-  <select name="detyrat"class="browser-default" required>
+  <select name="titulli"class="browser-default" required>
     <?php 
                 foreach($all_detyrat as $detyra):
     ?>
-                <option value="<?php echo $detyra["ID_detyra"];?>">
-                    <?php echo $detyra["titulli"];?>
+                <option value="<?php echo $detyra["titulli"];?>">
+                <?php echo $detyra["titulli"];?>
                 </option>
             <?php 
                endforeach;
