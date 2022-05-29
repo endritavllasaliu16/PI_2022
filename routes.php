@@ -16,6 +16,8 @@ $router->get('PI_2022/index.php/faqStudenti', 'controllers/faqStudenti.controlle
 $router->get('PI_2022/index.php/detyratProf', 'controllers/detyratProf.controller.php');
 $router->get('PI_2022/index.php/addDetyra', 'controllers/addDetyra.controller.php');
 $router->get('PI_2022/index.php/controllDetyra', 'controllers/controllDetyra.controller.php');
+$router->get('PI_2022/index.php/controllDetyra2', 'controllers/controllDetyra2.controller.php');
+$router->post('PI_2022/index.php/controllDetyra2', 'controllers/controllDetyra2.controller.php');
 $router->get('PI_2022/index.php/lendetStudent', 'controllers/lendetStudent.controller.php');
 $router->get('PI_2022/index.php/vleresimetProfesor', 'controllers/vleresimetProfesor.controller.php');
 $router->get('PI_2022/index.php/userprofile', 'controllers/userprofile.controller.php');

@@ -32,7 +32,7 @@ foreach($tasks as $value){
 					<?PHP echo $value['titulli'];?>
 				</td>
 				<td>
-					<?PHP echo $value['teksti_detyres'];?>
+					<?PHP echo $value['detajet'];?>
 				</td>
 				<td>
 					<?PHP echo $value['foto'];?>
@@ -45,7 +45,7 @@ foreach($tasks as $value){
 					<?PHP echo $value['vleresimi'];?>
 				</td>
                 <td>
-				<a href="controllDetyra2?makeid"> <input type="button" Value="Rregullo"  class="btn btn-success btn-sm" style="border-radius:0%"  data-toggle="modal" data-target="#myModal"></a>
+				<a class='btn-floating btn-small waves-effect waves-light red' href='controllDetyra2?id=<?php echo $value['ID']?>'><i class='material-icons' >create</i></a>
 				</td>
 			</tr>
 			<?php

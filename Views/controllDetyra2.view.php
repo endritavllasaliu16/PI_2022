@@ -2,68 +2,48 @@
 
  <?php require('partials/navProfesori.php'); ?>
 
- <?php
-
-	$connection = mysqli_connect("localhost:3308", "root", "root", "projekti");
-	$make = $_GET[ 'makeid' ];
-	$sql = "SELECT ID,titulli FROM detyrat_e_dorezuara";
-    $result = $connection->query($sql);
-	while ( $row = $result->fetch_assoc() ) 
-	{
-	?>
-    <fieldset>
-		<legend>Make Result</legend>
-		<form action="" method="POST" name="makeresult">
-		<table class="table table-hover">
-    	<tr>
-            <td><strong>Enrolment number  </strong></td>
-			<td> <?php $eno=$row['ID']; echo $eno; ?> </td>
-        </tr>
-		<tr>
-			<td><strong>Exam ID:</strong> </td>
-			<td><?php $ExamID= $row['titulli']; echo $ExamID; ?></td>
-		</tr>
-		<tr>
-			<td><strong>Marks</strong> </td>
-			<td>
-			    <select class="form-control" name="marks" required>
-					<option value="">---Select---</option>
-					<option value="Pass">Pass</option>
-					<option value="Fail">Fail</option>
-					<option value="Under Progress">Under Progress</option>
-				</select>
-			</td>
-		</tr>
-		<td><button type="submit" name="make" class="btn btn-success" style="border-radius:0%">Publish</button> </td>
-		<?php
-			}
-	
-		?>
-		<?php 
-        if($_SERVER['make'] == "POST")	{
-		$mark= $_SERVER['marks'];
-
-	   $sql="INSERT INTO `detyrat_e_vleresuara`(`ID`, `titulli`,'vleresimi') VALUES ($ID, '$emri_studentit' ,'$mark')";
-		if (mysqli_query($connect, $sql)) {
-					echo "
-		     		<br><br>
-							<div class='alert alert-success fade in'>
-							<a href='ResultDetails.php' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-							<strong>Success!</strong> Result Updated.
-							</div>
-							";
-							} else {
-								//error message if SQL query fails
-							echo "<br><Strong>Result Updation Faliure. Try Again</strong><br> Error Details: " . $sql . "<br>" . mysqli_error($connect);
-
-							//close the connection
-							mysqli_close($connect);
-							}
-							}
-							?>
-					</table>
-				</form>
-			</fieldset>
-		</div>
+ <body>
+<center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
+    <div class="container">
+      <br><br>
+      <div class="card"style="position: relative;padding: 20px 20px 20px 20px; left: 150px;">
+      <div class="row">
+<center><form action="" method="post" class="col s12">
+    <div class="row">
+        <div class="input-field col s12">
+          <input name="ID"  type="number" class="validate" value="<?php echo $_GET['id']; ?>" readonly>
+          <label for="lenda_id"></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="emri_studentit" type="text" type="text" class="validate" value="<?php echo $emri_studentit; ?>" readonly>
+          <label for="emriS">Emri i studentit</label>
+        </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="titulli" type="text" class="validate" min="3" max="8" value="<?php echo $titulli; ?>" readonly>
+          <label for="credits">Titulli i lendes</label>
+        </div>
+      </div>
+	  <div class="row">
+        <div class="input-field col s12">
+          <input name="detajet" type="text" class="validate" min="3" max="8" value="<?php echo $detajet; ?>" readonly>
+          <label for="credits">Detajet</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="vleresimi" type="number" class="validate" min="5" max="10" value="<?php echo $vleresimi; ?>" required>
+          <label for="semestri">Vleresimi</label>
+        </div>
+      </div>
+      <button name="update" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">create</i></button>
+    </form></center>
+</div>
+</div>
+</div>
+</center>
+</body>
  
 <?php require('partials/footer.php'); ?>

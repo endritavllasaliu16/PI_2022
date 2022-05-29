@@ -24,10 +24,6 @@
 					<td> <strong> Lenda </strong> </td>
 					<td> <textarea name="lenda" rows="5" cols="150"></textarea> </td>
 				</tr>
-				<tr>
-					<td><strong> ID e detyres  </strong> </td>
-					<td> <input type="number" name="IDdetyra" value="<?php echo $ID_detyra ?>"readonly> </td>
-				</tr>
 				<td> <button class="btn-floating btn-large waves-effect waves-light red" type="submit"><i class="material-icons" >add</i></button> </td>
 				</table>
 			</form>
