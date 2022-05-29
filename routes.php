@@ -12,6 +12,7 @@ $router->get('PI_2022/index.php/vleresimet', 'controllers/vleresimet.controller.
 $router->get('PI_2022/index.php/dorezimet', 'controllers/dorezimet.controller.php');
 $router->get('PI_2022/index.php/faqProfesori', 'controllers/faqProfesori.controller.php');
 $router->get('PI_2022/index.php/faqStudenti', 'controllers/faqStudenti.controller.php');
+$router->get('PI_2022/index.php/gethint.php', 'controllers/gethint.php');
 //$router->post('PI_2022/index.php/names', 'controllers/add-name.php');
 $router->get('PI_2022/index.php/detyratProf', 'controllers/detyratProf.controller.php');
 $router->get('PI_2022/index.php/addDetyra', 'controllers/addDetyra.controller.php');

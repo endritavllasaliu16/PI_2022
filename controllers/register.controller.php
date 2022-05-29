@@ -2,7 +2,6 @@
 require 'core/functions.php';
 
 session_start();
-
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     $user_first_name=$_POST['first_name'];
     $user_last_name=$_POST['last_name'];
@@ -33,13 +32,15 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         validateEmail($user_email,$user_email_confirm)
      )
     {
+        $hashed_password = hash("md5",$password);
+
         $app['database']->insert("perdoruesi",[
             "user_id"=>$user_id,
             "emri"=>$user_first_name,
             "mbiemri"=>$user_last_name,
             "email"=>$user_email,
             "username"=>$username,
-            "password"=>$password,
+            "password"=>$hashed_password,
             "roli"=>$user_role,
         ]);
         header("Location: /PI_2022/index.php");

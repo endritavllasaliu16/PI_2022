@@ -110,4 +110,12 @@ class QueryBuilder
         return $statement->fetchAll(PDO::FETCH_BOTH);
     }
 
+    public function getUsersPassword($user_id){
+        $statement = $this->pdo->prepare("SELECT password from perdoruesi where user_id='$user_id'");
+    
+        $statement->execute();
+        
+        return $statement->fetchAll(PDO::FETCH_BOTH);
+    }
+
 }
