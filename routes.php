@@ -34,6 +34,5 @@ $router->post('PI_2022/index.php/markDetyra', 'controllers/markDetyra.controller
 $router->get('PI_2022/index.php/vleresimetDetails', 'controllers/vleresimetDetails.controller.php');
 $router->post('PI_2022/index.php/dorezodetyren', 'controllers/dorezodetyren.controller.php');
 $router->post('PI_2022/index.php/addDetyra', 'controllers/addDetyra.controller.php');
-
-
+$router->get('PI_2022/index.php/DetyratNgaLenda', 'controllers/DetyratNgaLenda.controller.php');
 ?>
