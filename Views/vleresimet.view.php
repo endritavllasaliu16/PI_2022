@@ -26,7 +26,7 @@ foreach($tasks as $value){
 					<?PHP echo $value['titulli'];?>
 				</td>
 				<td>
-					<?PHP echo $value['detajet'];?>
+					<?PHP echo $value['teksti_detyres'];?>
 				</td>
 				<td>
 					<?PHP echo $value['data_dorezimit'];?>

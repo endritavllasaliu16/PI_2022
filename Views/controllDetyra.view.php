@@ -1,5 +1,6 @@
 <?php require('partials/head.php'); ?>
-<?php require('partials/navProfesori.php'); ?>
+<?php require('partials/navProfesori.php'); 
+?>
  <body>
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
 <div class="col-md-8" style="position: relative;padding: 20px 20px 20px 20px;">
@@ -13,7 +14,7 @@
 			<th>Titulli</th>
 			<th>Semestri</th>
 			<th>Detajet</th>
-			<th>Detyra</th>
+			<th>File</th>
 			<th>Data e dorezimit</th>
 			<th>Vleresimi</th>		
 <br>
@@ -44,6 +45,9 @@ foreach($tasks as $value){
 				</td>
 				<td>
 					<?PHP echo $value['data_dorezimit'];?>
+				</td>
+				<td>
+					<?PHP echo $value['vleresimi'];?>
 				</td>
 			
 				<td>
