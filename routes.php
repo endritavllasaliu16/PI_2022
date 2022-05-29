@@ -30,6 +30,7 @@ $router->post('PI_2022/index.php/register', 'controllers/register.controller.php
 $router->post('PI_2022/index.php', 'controllers/index.controller.php');
 $router->post('PI_2022/index.php/userprofile', 'controllers/userprofile.controller.php');
 $router->get('PI_2022/index.php/markDetyra', 'controllers/markDetyra.controller.php');
+$router->post('PI_2022/index.php/markDetyra', 'controllers/markDetyra.controller.php');
 $router->get('PI_2022/index.php/vleresimetDetails', 'controllers/vleresimetDetails.controller.php');
 $router->post('PI_2022/index.php/dorezodetyren', 'controllers/dorezodetyren.controller.php');
 $router->post('PI_2022/index.php/addDetyra', 'controllers/addDetyra.controller.php');

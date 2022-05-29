@@ -91,31 +91,15 @@ class QueryBuilder
     }
 
     public function updateVleresimi($ID,$vleresimi){
-        $sql="update detyrat_e_dorezuara set vleresimi='$vleresimi' where ID='$ID";
+        $sql="update detyrat_e_dorezuara set vleresimi='$vleresimi' where ID='$ID'";
         try {
             $statement = $this->pdo->prepare($sql);
             
-            $statement->execute($parameters);
+            $statement->execute();
         } catch (Exception $e) {
             
            echo $e->getMessage();
         }
-    }
-
-    public function selectIDDetyra($table){
-        $statement = $this->pdo->prepare("SELECT ID_detyra FROM detyrat");
-    
-        $statement->execute();
-        
-        return $statement->fetchAll(PDO::FETCH_BOTH);
-    }
-
-    public function getUsersPassword($user_id){
-        $statement = $this->pdo->prepare("SELECT password from perdoruesi where user_id='$user_id'");
-    
-        $statement->execute();
-        
-        return $statement->fetchAll(PDO::FETCH_BOTH);
     }
 
 }
