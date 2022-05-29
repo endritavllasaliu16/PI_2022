@@ -1,8 +1,6 @@
 <?php require('partials/head.php'); ?>
-
- <?php require('partials/nav.php'); ?>
-
  <body>
+ <?php require('partials/nav.php'); ?>
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
  <div class="container"  style="position: relative ">
   <h5> Detyrat ne baze te lendes </h5>
@@ -17,6 +15,7 @@
 <th>Titulli</th>
 <th>Data e dorezimit</th>
 </tr>
+</table>
 <?php
 foreach($result as $value){
 	?>
@@ -34,6 +33,14 @@ foreach($result as $value){
 <?php
 }	
 ?>
+</div>
+<div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
+ <div class="container"  style="position: relative;padding: 50px 20px 20px 20px;">
+	<div class="row">
+		<div class="col-md-12 text-center">
+          <a href="lendetStudent"><button  href="" type="submit" class="btn btn-primary" style="border-radius:10%">Kthehu tek lendet</button></a>
+		</div>
+	</div>
 </div>
 </center>
 </body>
