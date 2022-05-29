@@ -13,6 +13,7 @@
 			<th>Titulli</th>
 			<th>Semestri</th>
 			<th>Detajet</th>
+			<th>Detyra</th>
 			<th>Data e dorezimit</th>
 			<th>Vleresimi</th>		
 <br>
@@ -37,6 +38,9 @@ foreach($tasks as $value){
 				</td>
 				<td>
 					<?PHP echo $value['detajet'];?>
+				</td>
+				<td>
+					<?PHP echo $value['foto'];?>
 				</td>
 				<td>
 					<?PHP echo $value['data_dorezimit'];?>

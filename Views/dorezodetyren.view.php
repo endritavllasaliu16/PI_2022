@@ -47,6 +47,7 @@
   <br>       -->
   <input type="text" name="detajet" placeholder="Detajet e detyres">
   <br>
+  <input type="date" name="data_dorezimit" placeholder="Data e dorezimit">
   <br> 
   <button class="btn grey waves-effect" onclick="document.getElementById('file').click()">Ngarko</button>
   <br>
