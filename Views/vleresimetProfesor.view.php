@@ -32,7 +32,7 @@ foreach($tasks as $value){
 					<?PHP echo $value['titulli'];?>
 				</td>
 				<td>
-					<?PHP echo $value['teksti_detyres'];?>
+					<?PHP echo $value['detajet'];?>
 				</td>
 				<td>
 					<?PHP echo $value['foto'];?>

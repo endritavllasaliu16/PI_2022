@@ -1,10 +1,10 @@
 <?php require('partials/head.php'); ?>
 
 <?php require('partials/navProfesori.php'); ?>
-<html>
-<head>	
-	<title>Ndrysho Lenden</title>
-</head>
+
+<script language="javascript">
+    document.title = "Ndrysho Lenden";
+</script>
 
 <body>
 <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
@@ -43,7 +43,6 @@
 </div>
 </div>
 </center>
-</body>
-</html>
+
 
 <?php require('partials/footer.php')?>
