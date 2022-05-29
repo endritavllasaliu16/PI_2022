@@ -10,6 +10,7 @@
         <center><li class="logo"><img src="https://cdn-icons-png.flaticon.com/512/332/332783.png" width="50px" height="50px"></li></center>
          <center><li class="bold"><a class="collapsible-header waves-effect waves-teal" href="userprofile" tabindex="0"><?php echo $user_data[0]->username?></a></li></center>
       <li class="no-padding">
+        <center><li>Last visited: <?php echo $last_visited; ?></li></center>
         <ul class="collapsible collapsible-accordion">
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="profesor" tabindex="0">Home</a></li>
  <li class="bold"><a class="collapsible-header waves-effect waves-teal" href="lendet" tabindex="0">Lendet</a></li>
