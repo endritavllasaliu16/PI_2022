@@ -17,7 +17,7 @@
 <th>DeadLine</th>
 </tr>
 <?php
-$conn = mysqli_connect("localhost", "root", "root", "projekti");
+$conn = mysqli_connect("localhost", "root", "", "projekti");
 if ($conn->connect_error) {
 die("Lidhja u shkput: " . $conn->connect_error);
 }
@@ -51,7 +51,7 @@ $conn->close();
 <th>Data e dorezimit</th>
 </tr>
 <?php
-$conn = mysqli_connect("localhost", "root", "root", "projekti");
+$conn = mysqli_connect("localhost", "root", "", "projekti");
 if ($conn->connect_error) {
 die("Lidhja u shkput: " . $conn->connect_error);
 }

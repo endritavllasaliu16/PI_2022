@@ -26,8 +26,8 @@ foreach($tasks as $value){
 	<td>
 	<?php echo $value['ID_lenda']; ?>
 	</td>
-	<td>
-		<?PHP echo $value['emri'];?>
+	<td style="text-decoration: none;">
+      <a href="DetyratNgaLenda?emri=<?php echo $value['emri']?>"> <?php echo $value['emri'];?></a>
 	</td>
 	<td>
 		<?PHP echo $value['kredi'];?>

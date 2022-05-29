@@ -48,6 +48,15 @@
   <input type="text" name="detajet" placeholder="Detajet e detyres">
   <br>
   <br> 
+  <button class="btn grey waves-effect" onclick="document.getElementById('file').click()">Ngarko</button>
+  <br>
+  <br>
+  <input type='file' name="foto" id="file" style="display:none" multiple 
+       onchange="javascript:updateList()">
+<br/>Selected files:
+<div id="fileList"></div>
+<br>
+<br>
   <button name="delete" class="btn red waves-effect">Dorezo</button>
   <br>
   <br>
