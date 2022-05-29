@@ -19,20 +19,20 @@
 
 <?php
 foreach($result as $value){
-	?>
+    ?>
 <tr>
-	<td>
+    <td>
       <?php echo $value['pershkrimi']; ?>
-	</td>
-	<td>
-		<?PHP echo $value['titulli'];?>
-	</td>
-	<td>
-		<?PHP echo $value['deadline'];?>
-	</td>
+    </td>
+    <td>
+        <?PHP echo $value['titulli'];?>
+    </td>
+    <td>
+        <?PHP echo $value['deadline'];?>
+    </td>
 </tr>
 <?php
-}	
+}   
 ?>
 </div>
 </center>

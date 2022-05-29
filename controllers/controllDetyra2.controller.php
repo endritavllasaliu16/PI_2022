@@ -27,8 +27,11 @@ while($res = mysqli_fetch_array($result))
     $emri_studentit = $res['emri_studentit'];
     $titulli = $res['titulli'];
     $lenda = $res['lenda'];
+    $semestri = $res['semestri'];
     $detajet = $res['detajet'];
+    $foto = $res['foto'];
     $vleresimi = $res['vleresimi'];
+    $data_dorezimit = $res['data_dorezimit'];
 }
 
 if(isset($_POST['update']))
@@ -37,8 +40,12 @@ if(isset($_POST['update']))
 $id = mysqli_real_escape_string($mysqli, $_POST['ID']);
 $emri_studentit = mysqli_real_escape_string($mysqli, $_POST['emri_studentit']);
 $titulli = mysqli_real_escape_string($mysqli, $_POST['titulli']);
-$detajet = mysqli_real_escape_string($mysqli, $_POST['detajet']);	
+$lenda = mysqli_real_escape_string($mysqli, $_POST['lenda']);
+$semestri = mysqli_real_escape_string($mysqli, $_POST['semestri']);
+$detajet = mysqli_real_escape_string($mysqli, $_POST['detajet']);
+$foto = mysqli_real_escape_string($mysqli, $_POST['foto']);	
 $vleresimi = mysqli_real_escape_string($mysqli, $_POST['vleresimi']);
+$data_dorezimit = mysqli_real_escape_string($mysqli, $_POST['data_dorezimit']);
 if(empty($vleresimi) || empty($emri_studentit) || empty($titulli)) {	
 if(empty($vleresimi)) {
 echo '<font color="red">Vlersimi field is empty.</font><br>';

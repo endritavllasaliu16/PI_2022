@@ -91,11 +91,11 @@ class QueryBuilder
     }
 
     public function updateVleresimi($ID,$vleresimi){
-        $sql="update detyrat_e_dorezuara set vleresimi='$vleresimi' where ID='$ID'";
+        $sql="update detyrat_e_dorezuara set vleresimi='$vleresimi' where ID='$ID";
         try {
             $statement = $this->pdo->prepare($sql);
             
-            $statement->execute();
+            $statement->execute($parameters);
         } catch (Exception $e) {
             
            echo $e->getMessage();

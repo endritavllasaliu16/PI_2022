@@ -15,21 +15,18 @@ if(isset($_COOKIE["Lastvisit"])){
 
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
-    $lenda= $_REQUEST['lenda'];
-    $titulli= $_REQUEST['titulli'];
-    $semestri= $_REQUEST['semestri'];
-    $detajet= $_REQUEST['detajet'];
-     $data_dorezimit = $_REQUEST['data_dorezimit'];
-     $foto=$_REQUEST['foto'];
-
+    $lenda=$_POST['lenda'];
+    $titulli=$_POST['titulli'];
+    $semestri=$_POST['semestri'];
+    $detajet=$_POST['detajet'];
+    $foto=$_POST['foto'];
  $app['database']->insert("detyrat_e_dorezuara",[
             "emri_studentit"=> $emri_studentit,
             "titulli"=> $titulli,
             "lenda"=> $lenda,
             "semestri"=> $semestri,
             "detajet"=> $detajet,
-            "data_dorezimit"=>$data_dorezimit,
-            "foto"=>$foto,
+            "foto"=> $foto
         ]);
 }
   //$row = $query->fetch(PDO::FETCH_BOTH)

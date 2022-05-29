@@ -16,7 +16,6 @@ if(isset($_COOKIE["Lastvisit"])){
 
 $emri = $_GET['emri'];
 
-echo($emri);
 $sql = "SELECT titulli, pershkrimi, deadline FROM detyrat WHERE lenda='$emri'";
 
 $result = $mysqli->query($sql);
