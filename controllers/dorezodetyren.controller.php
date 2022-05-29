@@ -19,23 +19,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             "detajet"=> $detajet,
         ]);
 }
-  
-    // Connect to database 
-//     if(isset($_POST['delete']))
-// {
-//     $id = mysqli_real_escape_string($mysqli, $_POST['ID_detyra']);
-//     $delete = mysqli_query($mysqli, "DELETE FROM detyrat WHERE ID_detyra=$id");
-//     header("Location: ../index.php/detyratemia");
-// }
-    // mysqli_connect("servername","username","password","database_name")
-   
-    // Get all the categories from category table
-    $sql = "SELECT * FROM `lendet`";
-    $all_lendet = mysqli_query($mysqli,$sql);
-
-    $sql = "SELECT * FROM `detyrat`";
-    $all_detyrat = mysqli_query($mysqli,$sql);
-
+  //$row = $query->fetch(PDO::FETCH_BOTH)
+    $all_lendet=$app['database']->selectAll("lendet");
+    $all_detyrat = $app['database']->selectAll("detyrat");
         
     
 require 'views/dorezodetyren.view.php';

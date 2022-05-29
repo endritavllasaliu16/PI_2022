@@ -102,4 +102,12 @@ class QueryBuilder
         }
     }
 
+    public function selectIDDetyra($table){
+        $statement = $this->pdo->prepare("SELECT ID_detyra FROM detyrat");
+    
+        $statement->execute();
+        
+        return $statement->fetchAll(PDO::FETCH_BOTH);
+    }
+
 }

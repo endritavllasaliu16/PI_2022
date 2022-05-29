@@ -1,27 +1,25 @@
 <?php require('partials/head.php'); ?>
 <body>
  <?php require('partials/nav.php'); ?>
-<center>    
-  <form method="POST">
+<center>
+ <form method="POST">
             <div class="card" style="max-width: fit-content;padding: 5px 15px 15px 15px;">
                 <h5>Dorezo detyren: </h5>
                 <br>
-            
-   <label>Zgjedh lenden e regjistruar</label>
+                 <label>Zgjedh lenden e regjistruar</label>
   <select name="lenda" class="browser-default" required>
     <?php 
-                while ($lendet = mysqli_fetch_array(
-                        $all_lendet,MYSQLI_ASSOC)):;
+                foreach($all_lendet as $lenda):
     ?>
-                <option value="<?php echo $lendet["ID_lenda"];?>">
-                    <?php echo $lendet["emri"];?>
+                <option value="<?php echo $lenda['ID_lenda'];?>">
+                    <?php echo $lenda['emri'];?>
                 </option>
             <?php 
-                endwhile;
+               endforeach;
             ?>
   </select>
   <br>
-     <label>Zgjedh semestrin</label>
+   <label>Zgjedh semestrin</label>
   <select name="semestri"class="browser-default" required>
     <option value="" disabled selected>Semestri</option>
     <option value="Semestri 3">Semestri 1</option>
@@ -30,20 +28,20 @@
     <option value="Semestri 4">Semestri 4</option>
   </select>
   <br>
-     <label>Zgjedh detyren</label>
+
+  <label>Zgjedh detyren</label>
   <select name="detyrat"class="browser-default" required>
     <?php 
-                while ($detyrat = mysqli_fetch_array(
-                        $all_detyrat,MYSQLI_ASSOC)):; 
+                foreach($all_detyrat as $detyra):
     ?>
-                <option value="<?php echo $detyrat["ID_detyra"];?>">
-                    <?php echo $detyrat["titulli"];?>
+                <option value="<?php echo $detyra["ID_detyra"];?>">
+                    <?php echo $detyra["titulli"];?>
                 </option>
             <?php 
-                endwhile; 
+               endforeach;
             ?>
   </select>
-  <br>       
+   <br>       
   <input type="text" name="detajet" placeholder="Detajet e detyres">
   <br>
   <br> 
@@ -51,7 +49,8 @@
   <br>
   <br>
   <label>Shif detyrat e dorezuara <a href="">ketu</a></label>
-          </div>
+  <br>     
+  <div>
 </form>
 </center>
 </body>
