@@ -12,4 +12,7 @@ if(isset($_COOKIE["Lastvisit"])){
 if($user_data[0]->roli=="profesor"){
     header("Location: /PI_2022/index.php");
 }
+
+$tasks=$app['database']->selectAssigmentsByVleresimi("detyrat_e_dorezuara");
+
 require 'views/vleresimet.view.php';
