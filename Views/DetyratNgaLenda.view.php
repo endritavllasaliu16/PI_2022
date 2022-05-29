@@ -21,15 +21,12 @@
 foreach($result as $value){
     ?>
 <tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 	<td>
-=======
+
     <td>
->>>>>>> c8501ab (d)
-=======
+
     <td>
->>>>>>> 354e6fd0ffc8a41b40bf4a29d2f2e26ec039561b
       <?php echo $value['pershkrimi']; ?>
     </td>
     <td>
