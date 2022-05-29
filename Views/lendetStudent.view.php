@@ -6,7 +6,8 @@
 </script>
  <body>
  <center><div class="section no-pad-bot" id="index-banner" style="max-width: 50%;">
- <div class="container"  style="position: relative;padding: 20px 20px 20px 20px;">
+ <div class="container"  style="position: relative;padding: 20px;">
+  <h5> Lendet </h5>
 </div>
 <br>
 <br>
@@ -15,6 +16,7 @@
 <table id="myTable" style="padding: 20px 20px 20px 20px;">
 <tr>
 <th>Id e Lendes</th>
+<!-- <th><a href="DetyratNgaLenda"> Lenda</a></th> -->
 <th>Lenda</th>
 <th>Kredite</th>
 <th>Semestri</th>
@@ -27,7 +29,8 @@ foreach($tasks as $value){
 	<?php echo $value['ID_lenda']; ?>
 	</td>
 	<td>
-		<?PHP echo $value['emri'];?>
+      <a href="DetyratNgaLenda?emri=<?php echo $value['emri']?>"> <?php echo $value['emri']; ?></a>
+      <!-- <?php echo $value['emri']; ?> -->
 	</td>
 	<td>
 		<?PHP echo $value['kredi'];?>
@@ -42,7 +45,6 @@ foreach($tasks as $value){
 </div>
 </center>
 </body>
-
 <script>
 function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
@@ -63,5 +65,4 @@ function myFunction() {
   }
 }
 </script>
-  
 <?php require('partials/footer.php'); ?>

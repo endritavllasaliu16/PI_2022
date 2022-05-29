@@ -12,5 +12,5 @@ if(isset($_COOKIE["Lastvisit"])){
     // die;
     $last_visited = $_COOKIE["Lastvisit"];
 }
-
+$tasks=$app['database']->selectAll("lendet");
 require 'views/lendetStudent.view.php';
